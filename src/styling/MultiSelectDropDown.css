@@ -1,0 +1,70 @@
+.dd_container {
+    position: relative;
+    width: 200px;
+    font-family: Arial, sans-serif;
+}
+
+.dropdown-header {
+    margin-top: 9px;
+    padding: 10px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Add this line to make it a reference point */
+
+}
+
+.dropdown-arrow {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.dropdown-arrow.down {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.options_menu {
+    position: absolute;
+    width: 100%;
+    z-index: 10000;
+    overflow: hidden;
+    max-height: 0;
+    left: 0; /* Center horizontally */
+    transition: max-height 0.4s ease-out;
+    transform: translateX(-10%); /* Center horizontally */
+}
+
+/* When dropdown is active, increase max-height */
+.dropdown-header.active + .options_menu {
+    max-height: 200px;
+}
+
+.entire_list{
+    list-style: none;
+}
+
+.options {
+    padding: 0;
+    margin: 0;
+    border-top: none;
+}
+.single_option{
+    padding: 3px;
+    border: 1px solid var(--border-color);
+    background-color: var(--background-color);
+}
+
+.single_option:hover {
+    background-color: #99a3b4;
+}

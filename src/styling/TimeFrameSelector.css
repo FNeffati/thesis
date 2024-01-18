@@ -1,0 +1,32 @@
+.time-frame-selector {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    color: var(--text-color);
+    margin: 2px;
+}
+
+.time-frame-selector label {
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: var(--label-color);
+    margin-left: 2px;
+}
+
+.time-frame-selector input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: var(--input-background-color); /* Added for theme compatibility */
+    color: var(--text-color); /* Added for theme compatibility */
+}
+
+.time-frame-selector input[type="date"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
