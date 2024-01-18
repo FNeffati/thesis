@@ -18,25 +18,34 @@ Make sure you have the following installed:
 
 1. Clone the repository:
 
-```git clone https://github.com/your-username/react-flask-app.git```
+git clone https://github.com/your-username/react-flask-app.git
 
 Navigate to the project directory:
 ```cd react-flask-app```
+
 Install frontend dependencies:
-```cd src
-npm install```
+```
+cd src
+npm install
+```
+
 Install backend dependencies:
-```cd backend
+```
+cd backend
 pip install -r requirements.txt
 ```
-Running the Application
+### Running the Application
+
 Start the Flask backend:
-```cd backend
-python app.py```
+```
+cd backend
+python app.py
+```
 The Flask backend will run on http://localhost:5000.
 Start the React app:
 
-```cd src
+```
+cd src
 npm start
 ```
 The React app will be accessible at http://localhost:3000.
